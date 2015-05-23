@@ -1,6 +1,6 @@
 #ESP8266-Yo-Lua
 
-This is a simple [Yo]((https://www.justyo.co/)) client for the ESP8266 wifi module. It is written in LUA an requires the [NodeMCU-firmware](https://github.com/nodemcu/nodemcu-firmware). 
+This is a simple [Yo]((https://www.justyo.co/)) client. It is written in LUA an runs on a ESP8266-wifi-module with the [NodeMCU-firmware](https://github.com/nodemcu/nodemcu-firmware). 
 
 ## Usage
 After powering on, wait until the led goes off. Press the switch and the ESP8266-module connects to your wifi-access-point and sends a "Yo" to the user defined in the "config.lua" file. If sending was successfull, the led lights up. If you want to send another "Yo" just press the button again.
@@ -9,11 +9,8 @@ After powering on, wait until the led goes off. Press the switch and the ESP8266
 * edit the config.lua file
 * upload config.lua, init0.lua, yo.lua and init.lua to the ESP8266-01 Module
 * use node.compile() to compile config.lua, init0.lua, yo.lua
-* wiring
-** WARNING: chip is V3.3 only !!
-** [pinout](https://github.com/esp8266/esp8266-wiki/wiki/Hardware_versions)
-** connect GPIO2--Led--Resitor--GND
-** connect GPIO0--Switch--GND
+* connect GPIO2--Led--Resitor--GND
+* connect GPIO0--Switch--GND
 
 ## Prerequisites
 * ESP8266-01 wifi module with NodeMCU-firmware (Version 0.9.6)
