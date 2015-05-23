@@ -9,8 +9,11 @@ After powering on, wait until the led goes off. Press the switch and the ESP8266
 * edit the config.lua file
 * upload config.lua, init0.lua, yo.lua and init.lua to the ESP8266-01 Module
 * use node.compile() to compile config.lua, init0.lua, yo.lua
-* connect GPIO2--Led--Resitor--GND
-* connect GPIO0--Switch--GND
+* wiring
+** WARNING: chip is V3.3 only !!
+** [pinout](https://github.com/esp8266/esp8266-wiki/wiki/Hardware_versions)
+** connect GPIO2--Led--Resitor--GND
+** connect GPIO0--Switch--GND
 
 ## Prerequisites
 * ESP8266-01 wifi module with NodeMCU-firmware (Version 0.9.6)
